@@ -293,7 +293,7 @@ section.section {
 }
 
 .qgov-login .ico {
-	background-image: url("../../assets/img/lock.png");
+	background-image: url("../assets/img/lock.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	border-top-left-radius: 4px;
@@ -315,11 +315,6 @@ section.section {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	border: none;
-}
-@media (max-width: 600px) {
-	.govid-login {
-		width: 75% !important;
-	}
 }
 
 .percentage-indicator {
