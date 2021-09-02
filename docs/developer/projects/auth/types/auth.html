@@ -81,7 +81,7 @@
 
 
 	<!-- HOTJAR -->
-	<!-- Hotjar Tracking Code for https://www.qld.gov.au/ -->
+	<!-- Hotjar Tracking Code for https://www.qld.gov.au/
 	<script>
 		(function (h, o, t, j, a, r) {
 			h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
@@ -91,8 +91,7 @@
 			r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
 			a.appendChild(r);
 		})(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-	</script>
-
+	</script> -->
 
 </head>
 
@@ -176,135 +175,14 @@
 					</p>
 				</div>
 			</div>
-			<div class="container-fluid">
-				<div class="row">
-					<ul class="au-card-list au-card-list--matchheight">
-						<li class="col-lg-6 col-md-12">
-							<div class="au-card au-card--centred au-body">
-								<div class="au-body au-body--alt au-card__header au-card--centred">
-									<h3>Individual login</h3>
-								</div>
-								<div class="au-card__inner">
-									<div class="au-grid">
-										<div class="container-fluid">
+			<br>
+			<div class="au-grid">
+				<div class="container-fluid">
+					<div id="card_container" class="row au-card-list au-card-list--matchheight">
 
-											<div class="row">
-												<div class="col-sm-12">
-													<span>
-
-														<a class="au-btn qgov-login" id="cidm"
-															href="../types/cidm/cidm-auth.html">
-															<i class="ico" role="presentation"></i>
-															<span>Login with QGov</span>
-														</a>
-
-														<p>A <b>QGov</b> Queensland Government account gives you fast,
-															secure and easy access to Queensland Government online
-															services.</p>
-
-														<p>Read our <a class="create-login"
-																href="https://identity.qld.gov.au/help/faq.html">login
-																and digital identity frequently asked questions</a>.</p>
-													</span>
-												</div>
-											</div>
-											<hr>
-											</hr>
-
-											<div class="row">
-												<div class="col-sm-12">
-													<span>
-														<br>
-														<a class="au-btn" id="cidm" href="#">
-															<i class="ico" role="presentation"></i>
-															<span>Login with MyGovID </span>
-														</a>
-														<p>myGovID is your Digital Identity, use it to unlock
-															participating government online services</p>
-													</span>
-												</div>
-											</div>
-
-										</div>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li class="col-lg-6 col-md-12">
-							<div class="au-card au-body">
-								<div class="au-body au-body--alt au-card__header au-card--centred">
-									<h3>Business login
-									</h3>
-								</div>
-								<div class="au-card__inner">
-									<div class="au-grid">
-										<div class="container-fluid">
-
-											<div class="row">
-												<div class="col-sm-12">
-													<span>
-
-														<a class="au-btn govid-login" id="cidm" href="#"
-															style="margin:0px auto !important;">
-														</a>
-
-														<p>To login with myGovID:</p>
-														<ul style="display:table;margin:0px auto;">
-															<li>&bull; download and set up the myGovID app</li>
-															<li>&bull; access RAM to link to your myGovID to your
-																Australian
-																Business Number (ABN); and</li>
-															<li>&bull; Set your level of access to full under QLD
-																Digital
-																Identity login (found under Queensland Government).
-															</li>
-														</ul>
-														<p>Find out how to <a>access online services with myGovID and
-																and RAM</a>.</p>
-
-													</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li>
-						<!--<li class="col-lg-6 col-md-12">
-							<div class="au-card au-body">
-								<div class="au-body au-body--alt au-card__header au-card--centred">
-									<h2>Business login</h2>
-								</div>
-								<div class="au-card__inner">
-									<div class="au-grid">
-										<div class="container-fluid">
-											<div class="row">
-												<div class="col-sm-12">
-													<div class="row">
-														<a href="" class="au-btn govid-login" id="govid"></a>
-													</div>
-													<p>To login to <b>myGovID</b>:</p>
-													<ul>
-														<li>download and set up the myGovID app</li>
-														<li>access RAM to link your myGovID to your Australian Business
-															Number (ABN); and</li>
-														<li>set your level of access to Full under QLD Digital Identity
-															login (found under Queensland Government).</li>
-													</ul>
-													<p>Find out how to <a
-															href="https://www.abr.gov.au/general-information/accessing-our-online-services-with-mygovid-and-ram">access
-															online services with myGovID and RAM</a>.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li>-->
-					</ul>
+					</div>
 				</div>
 			</div>
-
 			<div class="container-fluid">
 				<br>
 				<a class="au-btn mt-5 au-btn--secondary" href="./blarga/">
@@ -312,8 +190,6 @@
 				</a>
 			</div>
 		</section>
-
-
 	</main>
 	<!-- END MAIN BODY -->
 
@@ -348,10 +224,51 @@
 	<!-- The javascript from pancake to open and close side nav on desktop -->
 	<script type="text/javascript" src="../../../../js/script.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+
+
 	<script type="text/javascript">
+
+		var json = [
+			{
+				title: "QGOV",
+				url: "https://www.google.com",
+				image: "../../../../assets/img/placeholder/600X260.png",
+				additional_text: "QGOV account details etc",
+				action: "_blank"
+			},
+			{
+				title: "MyGovID",
+				url: "https://www.google.com",
+				image: "../../../../assets/img/placeholder/600X260.png",
+				additional_text: "MyGovID example text",
+				action: "_blank"
+			},
+			{
+				title: "Staff",
+				url: "https://www.google.com",
+				image: "../../../../assets/img/placeholder/600X260.png",
+				additional_text: "Office 365",
+				action: "_blank"
+			},
+			{
+				title: "TMR",
+				url: "https://www.google.com",
+				image: "../../../../assets/img/placeholder/600X260.png",
+				additional_text: "TMR example text",
+				action: "_blank"
+			}
+		];
+
+
 		$(document).ready(function () {
 			$(document).on('click', '.returnbtn', function (e) {
 				window.location = "./blarga/index.html";
+			});
+			$.each(json, function (k, v) {
+				var current = { title: "", url: "", image: "", additional_text: "" }
+				current.title = v.title; current.url = v.url; current.image = v.image; current.additional_text = v.additional_text;
+				var card = "<div class='col-xs-6'><div class='au-card au-body au-card--shadow au-card--clickable'><img class='au-responsive-media-img' src=" + current.image + "/><div class='au-card__inner'><h3 class='au-card__title'><a class='au-card--clickable__link' href=" + current.url + " target=" + current.action + ">" + current.title + "</a></h3><p>" + current.additional_text + "</p></div></div><br>";
+				$('#card_container').append(card);
 			});
 		});
 	</script>
